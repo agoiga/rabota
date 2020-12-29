@@ -50,7 +50,7 @@
 	\centering
 	\includegraphics[width=\columnwidth]{sv}
 	\caption{Свёрточная сеть
-	https://habr.com/ru/post/416777/}
+	\url{https://habr.com/ru/post/416777/}}
 \end{figure}
 
 \item Сеть с прямым распространением сигналов. В ней запрещены циклы. Сначала сигнал передаётся на скрытый слой, затем на выходной слой и во внешнюю среду. Часто описывается в виде слоёного торта, где каждый слой состоит из входных, скрытых или выходных клеток. Клетки одного слоя не связаны между собой, а соседние слои обычно полностью связаны. Если у сети есть достаточное количество скрытых нейронов, она теоретически способна смоделировать взаимодействие между входным и выходными данными. Практически такие сети используются редко, но их часто комбинируют с другими типами для получения новых.
@@ -59,7 +59,7 @@
 	\centering
 	\includegraphics[width=\columnwidth]{pr}
 	\caption{Первый пример сети с прямым распространением
-	http://www.e-ng.ru/informatika_programmirovanie/referat_nejronnye_seti.html}
+	\url{http://www.e-ng.ru/informatika_programmirovanie/referat_nejronnye_seti.html}}
 \end{figure}
 \begin{figure}
 	\centering
@@ -114,7 +114,7 @@ $\delta = y_0\medspace-\medspace y$
 Дельта-правило заключается в следующем – изменение величины весового коэффициента должно быть равно:
 
 $\Delta w_{jk} = \eta\medspace\delta_k\medspace x_j$
-Где $\etaη$ – норма обучения. Это число мы сами задаем перед началом обучения. $x_jx$ – это сигнал, приходящий к элементу k от элемента j. А $\delta_kδ$ – ошибка элемента k.
+Где $\eta$ – норма обучения. Это число мы сами задаем перед началом обучения. $x_jx$ – это сигнал, приходящий к элементу k от элемента j. А $\delta_k$ – ошибка элемента k.
 
 Таким образом, в процессе обучения нейронной сети на вход мы подаем образец за образцом, и в результате получаем новые значения весовых коэффициентов. Обычно обучение заканчивается, когда для всех вводимых образцов величина ошибки станет меньше определенной величины. После этого сеть подвергается тестированию при помощи новых данных, которые не участвовали в обучении. И по результатам этого тестирования уже можно сделать выводы, хорошо или нет справляется сеть со своими задачами.
 
@@ -132,7 +132,7 @@ $f{\Large{\prime}}(net_j) = f(net_j)\medspace (1\medspace-\medspace f(net_j))$
 $\delta_j = f(net_j)\medspace (1\medspace-\medspace f(net_j))\medspace \sum_{k}{}{\delta_k\medspace w_{kj}}$
 В этой формуле:
 
-$\delta_jδ  – ошибка элемента с индексом j$
+$\delta_j$ – ошибка элемента с индексом j
 k – индекс, соответствующий слою, который посылает ошибку “обратно”
 $net_jnet$ 
 j– комбинированный ввод элемента
@@ -143,7 +143,7 @@ $f(net_j)f(net)$ – активность элемента
 	\centering
 	\includegraphics[width=\columnwidth]{weight}
 	\caption{Распределение весов
-	https://microtechnics.ru/obuchenie-nejronnoj-seti-algoritm-obratnogo-rasprostraneniya-oshibok/?fdx_switcher=true}
+	\url{https://microtechnics.ru/obuchenie-nejronnoj-seti-algoritm-obratnogo-rasprostraneniya-oshibok/?fdx_switcher=true}}
 	\end{figure}
 
 Методы оптимизации
