@@ -49,7 +49,8 @@
 \begin{figure}
 	\centering
 	\includegraphics[width=\columnwidth]{sv}
-	\caption{Свёрточная сеть}
+	\caption{Свёрточная сеть
+	https://habr.com/ru/post/416777/}
 \end{figure}
 
 \item Сеть с прямым распространением сигналов. В ней запрещены циклы. Сначала сигнал передаётся на скрытый слой, затем на выходной слой и во внешнюю среду. Часто описывается в виде слоёного торта, где каждый слой состоит из входных, скрытых или выходных клеток. Клетки одного слоя не связаны между собой, а соседние слои обычно полностью связаны. Если у сети есть достаточное количество скрытых нейронов, она теоретически способна смоделировать взаимодействие между входным и выходными данными. Практически такие сети используются редко, но их часто комбинируют с другими типами для получения новых.
@@ -57,12 +58,14 @@
 \begin{figure}
 	\centering
 	\includegraphics[width=\columnwidth]{pr}
-	\caption{Первый пример сети с прямым распространением}
+	\caption{Первый пример сети с прямым распространением
+	http://www.e-ng.ru/informatika_programmirovanie/referat_nejronnye_seti.html}
 \end{figure}
 \begin{figure}
 	\centering
 	\includegraphics[width=\columnwidth]{pr2}
-	\caption{Второй пример сети с прямым распространением}
+	\caption{Второй пример сети с прямым распространением
+	https://present5.com/iskusstvennye-nejronnye-seti-biologicheskij-nejron-elementnaya/}
 \end{figure}
 
 \item Рекуррентная сеть – сеть в которой возможны циклы. Здесь сигнал от входного может поступать на любой из скрытых слоёв из скрытого слоя или даже на предыдущий слой. Её можно представить в виде сети с прямым распространением сигнала во времени. В данной нс у каждого соединения есть свой вес, он же приоритет. Узлы в ней делятся на два типа, вводные узлы и узлы скрытые. Информация в рекуррентной нейронной сети передается не только по прямой, слой за слоем, но и между самими нейронами. Важной отличительной особенностью рекуррентной нейронной сети является наличие так званой «области внимания», когда машине можно задать определенные фрагменты данных, требующие усиленной обработки.
@@ -70,12 +73,14 @@
 \begin{figure}
 	\centering
 	\includegraphics[width=\columnwidth]{rek}
-	\caption{Пример рекуррентной сети}
+	\caption{Пример рекуррентной сети
+	https://www.machinelearningmastery.ru/multi-stream-rnn-concat-rnn-internal-conv-rnn-lag-2-rnn-in-tensorflow-f4f17189a208/}
 \end{figure}
 \begin{figure}
 	\centering
 	\includegraphics[width=\columnwidth]{rek2}
-	\caption{Формульная запись}
+	\caption{Формульная запись
+	https://mypresentation.ru/presentation/dinamicheskie-nejronnye-seti-i-ix-attraktory}
 \end{figure}
 
 \end{enumerate}
@@ -137,7 +142,8 @@ $f(net_j)f(net)$ – активность элемента
 \begin{figure}
 	\centering
 	\includegraphics[width=\columnwidth]{weight}
-	\caption{Распределение весов}
+	\caption{Распределение весов
+	https://microtechnics.ru/obuchenie-nejronnoj-seti-algoritm-obratnogo-rasprostraneniya-oshibok/?fdx_switcher=true}
 	\end{figure}
 
 Методы оптимизации
