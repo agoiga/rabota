@@ -1,0 +1,320 @@
+\documentclass[bachelor,subf
+%,href
+%,fixint=false
+%,facsimile
+%,times
+%,draft
+]{disser}
+%%\documentclass[12pt,a4paper]{report}
+
+
+\usepackage[
+  a4paper, mag=1000, includefoot,
+  left=2.5cm, right=1cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm,
+]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\ifpdf\usepackage{epstopdf}\fi
+
+\usepackage[pdftex,unicode,colorlinks,filecolor=blue,linkcolor=black,citecolor=blue,bookmarksopen,
+pdfhighlight=/N]{hyperref}
+
+%\onehalfspacing
+%\chaptername{Гла}
+\sloppy
+
+
+
+%\def\thefootnote{\arabic{footnote})}
+\def\ts{\thinspace}
+\def\a{\alpha}
+\def\b{\beta}
+\def\d{\delta}
+\def\D{\Delta}
+\def\e{\varepsilon}
+\def\f{\varphi}
+\def\g{\gamma}
+\def\G{\Gamma}
+\def\o{\omega}
+\def\O{\Omega}
+\def\s{\sigma}
+\def\vs{\varsigma}
+\def\p{\partial}
+\def\pr{\prime}
+\def\vt{\vartheta}
+\def\tl{\tilde}
+\def\wtl{\widetilde}
+\def\what{\widehat}
+\def\l{\lambda}
+\def\L{\Lambda}
+\def\wtl{\widetilde}
+\def\il{\int\limits}
+\def\sul{\sum\limits}
+\def\Rl{\rm Re}
+\def\dsp{\displaystyle}
+\def\ol{\overline}
+\def\oe{\kappa}
+\def\e{\varepsilon}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\t{\tilde}
+\def\ln{\mathop{\mathrm{ln}\, }}
+\def\ds{\displaystyle}
+\def\dif{{\rm d}}
+\def\what{\widehat}
+\def\oLH{\omega_{\scriptscriptstyle \rm LH}}
+\def\OLH{\Omega_{\scriptscriptstyle \rm LH}}
+\def\oH{\omega_{\scriptscriptstyle \rm H}}
+\def\OH{\Omega_{\scriptscriptstyle \rm H}}
+\def\oUH{\omega_{\scriptscriptstyle \rm UH}}
+\def\Op{\Omega_{\scriptscriptstyle \rm p}}
+\def\op{\omega_{\scriptscriptstyle \rm p}}
+\def\nue{\nu_{\scriptstyle \rm e}}
+\def\nuei{\nu_{\scriptstyle \rm ei}}
+\def\nuen{\nu_{\scriptstyle \rm en}}
+\def\nuin{\nu_{\scriptstyle \rm in}}
+\def\p{\scriptscriptstyle \rm p}
+
+\def\vte{{\textit{v}}_{\scriptscriptstyle {T}_{\rm e}}}
+
+
+\def\cP{\tilde P}
+\def\cH{cB}
+\def\EB{\bf E}
+\def\Bb{\bf B}
+\def\cHB{c{\bf B}}
+
+\def\E{{\cal E}\kern-6.8pt{\cal E}\kern-6.8pt{\cal E}}
+%\def\H{{\cal H}\kern-8.9pt{\cal H}\kern-9.1pt{\cal H}}
+\def\H{{\cal H}\kern-9.9pt{\cal H}\kern-9.9pt{\cal H}}
+
+\def\ve{{\boldmath {\mbox{$\varepsilon$}}}}
+
+\def\r{\rho\kern-6.2pt\rho\kern-6.3pt\rho}
+\def\ph{\phi\kern-6.7pt\phi\kern-6.7pt\phi}
+
+\def\fo{\varphi\kern-8.2pt\varphi\kern-8.3pt\varphi}
+\def\ol{\overline}
+
+\def\i{\textrm{i}}
+\def\d{\textrm{d}}
+
+\renewcommand{\vec}[1]{{\bf#1}}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\partial}{\d}
+
+\renewcommand{\baselinestretch}{1.25}
+
+
+\begin{document}
+% Название организации
+\institution{~\\ МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ\\ ~\\ Федеральное государственное автономное образовательное учреждение высшего образования\\ «Нижегородский государственный университет
+им. Н.\,И.\,Лобачевского» \\ ~\\
+Радиофизический факультет \\
+Кафедра электродинамики \\ ~\\
+Направление «Радиофизика»}
+% Имя лица, допускающего к защите (зав. кафедрой)
+
+\title{ВЫПУСКНАЯ  КВАЛИФИКАЦИОННАЯ  РАБОТА}
+% Тема
+\topic{Название работы}
+
+% Автор
+\author{ФИО} % ФИО
+\group{???} % Группа
+
+% Научный руководитель
+\sa      {Еськин В.\,А.}
+\sastatus{к.~ф.-м.~н.}
+
+
+
+% Город и год
+\city{Нижний Новгород}
+\date{\number\year}
+\maketitle
+
+% ----------------------------------------------------------------
+
+% ----------------------------------------------------------------
+
+% для замены в именах авторов использую регулярное выражение from (?<name>[A-Z?-?])\.\s(?<sname>[A-Z?-?])\. to  {${name}.\,${sname}.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+\renewcommand{\chaptername}{}
+%\renewcommand{\bibname}{Литература}
+%\renewcommand{\figurename}{Рисунок}
+
+%\setcounter{page}{6}
+%\maketitle
+% ----------------------------------------------------------------
+\tableofcontents
+% ----------------------------------------------------------------
+
+\addcontentsline{toc}{section}{Введение}
+\section*{Введение}
+\indent
+
+
+
+
+
+\chapter{Распознавания формул на изображениях глубокой нейронной сетью, основанной на GRU ячейке}
+%\addcontentsline{toc}{chapter}{Глава I Рассеяние плоской электромагнитной волны на миелинизированном аксоне}
+\section{Описание набора данных и подготовки набора данных}
+
+\section{Описание модели}
+
+\section{Описание процесса обучения и оценки точности модели}
+
+\section{Результаты численных экспериментов}
+
+\chapter{Распознавания формул на изображениях глубокой нейронной сетью, основанной на трансформере}
+
+\section{Описание модели}
+
+\section{Описание процесса обучения и оценки точности модели}
+
+\section{Результаты численных экспериментов}
+
+\clearpage
+\addcontentsline{toc}{section}{Заключение}
+\section*{Заключение}
+\indent
+
+
+
+
+% ----------------------------------------------------------------
+\bibliographystyle{gost705}
+%%\bibliography{Eskin_ENF_I_Bibl}
+
+\begin{thebibliography}{99}
+\itemsep=0ex
+
+%\bibitem{Fork1971} {Fork\,R.~L.} {Laser Stimulation of Nerve Cells in Aplysia}~//
+%  {Science}.
+%\newblock 1971.
+%\newblock V. 171, No. 3974.
+%\newblock P.\,907--908.
+%
+%\bibitem{Basser1991} {Basser\,P.~J., Roth\,B.~J.} {Stimulation of a myelinated nerve axon by
+%  electromagnetic induction}~// {Medical \& Biological Engineering \&
+%  Computing}.
+%\newblock 1991.
+%\newblock V.\,29, No.\,3.
+%\newblock P.\,261--268.
+%
+%\bibitem{Abaya2012} {Abaya\,T V~F, Blair\,S, Tathireddy\,P, Rieth\,L, Solzbacher\,F}. {A 3D
+%  glass optrode array for optical neural stimulation.}~// {Biomedical
+%  optics express}.
+%\newblock 2012.
+%\newblock V.\,3, No.\,12.
+%\newblock P.\,3087--3104.
+%
+%\bibitem{Abaya2012a} {Abaya\,T V~F, Diwekar\,M, Blair\,S, Tathireddy\,P, Rieth\,L,
+%  Clark\,G~a, Solzbacher\,F}. {Characterization of a 3D optrode array for
+%  infrared neural stimulation.}~// {Biomedical optics express}.
+%\newblock 2012.
+%\newblock V.\,3, No.\,9.
+%\newblock P.\,2200--19.
+%
+%\bibitem{Zhang2009} {Zhang\,Jiayi, Laiwalla\,Farah, Kim\,Jennifer~a, Urabe\,Hayato, {Van
+%  Wagenen}\,Rick, Song\,Yoon-Kyu, Connors\,Barry~W, Zhang\,Feng,
+%  Deisseroth\,Karl, Nurmikko\,Arto~V}. {Integrated device for optical
+%  stimulation and spatiotemporal electrical recording of neural activity in
+%  light-sensitized brain tissue.}~// {Journal of neural engineering}.
+%\newblock 2009.
+%\newblock V.\,6, No.\,5.
+%\newblock 055007\,p.
+%
+%\bibitem{Kravitz2011} {Kravitz\,Alexxai~V, Kreitzer\,Anatol~C}. {Optogenetic manipulation of
+%  neural circuitry in vivo.}~// {Current opinion in neurobiology}.
+%\newblock 2011.
+%\newblock V.\,21, No.\,3.
+%\newblock P.\,433--9.
+%
+%\bibitem{Ozden2013} {Ozden\,Ilker, Wang\,Jing, Lu\,Yao, May\,Travis, Lee\,Joonhee,
+%  Goo\,Werapong, O'Shea\,Daniel~J, Kalanithi\,Paul, Diester\,Ilka,
+%  Diagne\,Mohamed, Deisseroth\,Karl, Shenoy\,Krishna~V, Nurmikko\,Arto~V}. {A
+%  coaxial optrode as multifunction write-read probe for optogenetic studies in
+%  non-human primates.}~// {Journal of neuroscience methods}.
+%\newblock 2013.
+%\newblock V. 219, No.\,1.
+%\newblock P.\,142--54.
+%
+%\bibitem{Abaya2014} {Abaya\,Tanya V~F, Diwekar\,Mohit, Blair\,Steve, Tathireddy\,Prashant,
+%  Rieth\,Loren, Solzbacher\,Florian}. {Deep-tissue light delivery via optrode
+%  arrays.}~// {Journal of biomedical optics}.
+%\newblock 2014.
+%\newblock V.\,19, No.\,1.
+%\newblock 15006\,p.
+%
+%\bibitem{Peterson2014} {Peterson\,E~J, Tyler\,D~J}. {Motor neuron activation in peripheral
+%  nerves using infrared neural stimulation.}~// {Journal of neural
+%  engineering}.
+%\newblock 2014.
+%\newblock V.\,11, No.\,1.
+%\newblock 016001\,p.
+%
+%\bibitem{Shapiro2012} {Shapiro\,Mikhail~G, Homma\,Kazuaki, Villarreal\,Sebastian,
+%  Richter\,Claus-Peter, Bezanilla\,Francisco}. {Infrared light excites cells by
+%  changing their electrical capacitance.}~// {Nature communications}.
+%\newblock 2012.
+%\newblock V.\,3.
+%\newblock P.\,736--1--736--10.
+%
+%\bibitem{Poher2008} {Poher\,V, Grossman\,N, Kennedy\,G~T, Nikolic\,K, Zhang\,H~X, Gong\,Z,
+%  Drakakis\,E~M, Gu\,E, Dawson\,M~D, French\,P M~W, Degenaar\,P, Neil\,M a~a}.
+%  {Micro-LED arrays: a tool for two-dimensional neuron stimulation}~//
+%  {Journal of Physics D: Applied Physics}.
+%\newblock 2008.
+%\newblock V.\,41, No.\,9.
+%\newblock P.\,094014--1--094014--1--9.
+%
+%\bibitem{Siegel1999} {Basic Neurochemistry: Molecular, Cellular, and Medical Aspects},
+%  /\,Ed.\,G.G..\,Siegel, B.W..\,Agranoff, R.W..\,Albers, S.K..\,Fisher,
+%  M.D..\,Uhler.
+%\newblock New York: Lippincott-Raven Publishers, 1999.
+%\newblock 1184\,p.
+%
+%\bibitem{Segelstein1981} {Segelstein\,D.~J.} {The complex refractive index of water}: M.sc.
+%  thesis~/ University of Missouri.
+%\newblock 1981.
+%
+%\bibitem{Min2009} {Min\,Younjin, Kristiansen\,Kai, Boggs\,Joan~M, Husted\,Cynthia,
+%  Zasadzinski\,Joseph~a, Israelachvili\,Jacob}. {Interaction forces and
+%  adhesion of supported myelin lipid bilayers modulated by myelin basic
+%  protein.}~// {Proceedings of the National Academy of Sciences of the
+%  United States of America}.
+%\newblock 2009.
+%\newblock V. 106, No.\,9.
+%\newblock P.\,3154--3159.
+%
+%\bibitem{Kuznetsov1962} {Д.С.\,Кузнецов}. {Специальные функции},
+%  /\,Ed.\,Высшая.\,школа.
+%\newblock Высшая школа: Москва, 1962.
+%\newblock 249\,p.
+%
+%\bibitem{Abramowitz1972} {Abramowitz\,Milton, Stegun\,Irene~A.} {Handbook of Mathematical
+%  Functions With Formulas, Graphs, and Mathematical Tables}.
+%\newblock Washington, DC: NBS Applied Mathematics Series 55, National Bureau of
+%  Standards, 1972.
+%\newblock 1045\,p.
+%
+%\bibitem{Yasumoto2006} {Yasumoto\,K.} Electromagnetic Theory and Applications for Photonic Crystals.
+%\newblock Taylor \& Francis, Boca Raton, 2006.
+
+\end{thebibliography}
+
+
+
+
+
+% ----------------------------------------------------------------
+
+\end{document} 
