@@ -213,11 +213,11 @@ pdfhighlight=/N]{hyperref}
 
 Сам процесс обучения состоит из 11 итераций, для каждой из которых введены свои критерии обучения. К примеру для первой задаются такие параметры:
 
-\includegraphics[width=8cm]{G:/Diplom/t1.jpg}
+\includegraphics[width=11cm]{G:/Diplom/t1.jpg}
 
 Так как это самая первая итерация, тут нейронная сеть обучается 100 эпох на минимальном наборе изображений (1200 элементов). Но всё дальнейшее обучение будет проходить на большом "hugedataset" наборе изображений (104 000 элементов).
 
-Единственным результатом обучения нейронной сети, который мы можем увидеть ялвяется проверочная часть в конце каждой эпохи и выглядит она так:
+Единственным результатом обучения нейронной сети, который мы можем увидеть является проверочная часть в конце каждой эпохи и выглядит она так:
 
 \includegraphics[width=14cm]{G:/Diplom/it1.jpg}
 
@@ -269,27 +269,29 @@ pdfhighlight=/N]{hyperref}
 
 Итоги первой итерации: \qquad\qquad\qquad\qquad Итоги второй итерации: 
 
-\includegraphics[width=7cm]{G:/Diplom/rt1.1.jpg}%\ \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt2.jpg}
-%\
-%\Итоги третьей итерации: \qquad\qquad\qquad\quad\; Итоги четвёртой итерации: 
-%\
-%\\includegraphics[width=7cm]{G:/Diplom/rt3.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt4.jpg}
-%\
-%\Итоги пятой итерации: \qquad\qquad\qquad\qquad\; Итоги шестой итерации: 
-%\
-%\\includegraphics[width=7cm]{G:/Diplom/rt5.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt6.jpg}
-%\
-%\Итоги седьмой итерации: \qquad\qquad\qquad\quad\; Итоги восьмой итерации: 
-%\
-%\\includegraphics[width=7cm]{G:/Diplom/rt7.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt8.jpg}
-%\
-%\Итоги девятой итерации: \qquad\qquad\qquad\quad\; Итоги десятой итерации: 
-%\
-%\\includegraphics[width=7cm]{G:/Diplom/rt9.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt10.jpg}
-%\
-%\Итоги одиннадцатой итерации:
-%\
-%\\includegraphics[width=7cm]{G:/Diplom/rt11.jpg}
+\includegraphics[width=7cm]{G:/Diplom/rt1.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt2.1.jpg}
+
+Итоги третьей итерации: \qquad\qquad\qquad\quad\; Итоги четвёртой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt3.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt4.1.jpg}
+
+Итоги пятой итерации: \qquad\qquad\qquad\qquad\; Итоги шестой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt5.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt6.1.jpg}
+
+Итоги седьмой итерации: \qquad\qquad\qquad\quad\; Итоги восьмой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt7.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt8.1.jpg}
+
+Итоги девятой итерации: \qquad\qquad\qquad\quad\; Итоги десятой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt9.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt10.1.jpg}
+
+Итоги одиннадцатой итерации:
+
+\includegraphics[width=7cm]{G:/Diplom/rt11.1.jpg}
+
+Анализируя полученные результаты, стоит отметить, что при смене пакета изображений на "hugedataset", мы наблюдаем сильное улучшение результатов. Но, для первой и второй итераций параметры были неизменны. После прохождения 3 итерации можно заметить сильный спад результатов обучения, что и связанно с началом изменения критерий обучения. Пятая, шестая и седьмая итерации, по результатам обучения, примерно одинаковы. Для девятой итерации был введён новый формат изображений из-за чего качество распознования нейронной сетью сильно снижается, но в конечном итоге мы получаем, судя по нашим результатам, среднее значение для BLEU score и Validate average loss.
 
 \chapter{Распознавания формул на изображениях глубокой нейронной сетью, основанной на трансформере}
 
@@ -355,6 +357,10 @@ pdfhighlight=/N]{hyperref}
 
 \includegraphics[width=7cm]{G:/Diplom/rt5.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt6.jpg}
 
+\;
+
+\;
+
 Итоги седьмой итерации: \qquad\qquad\qquad\quad\; Итоги восьмой итерации: 
 
 \includegraphics[width=7cm]{G:/Diplom/rt7.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt8.jpg}
@@ -367,11 +373,16 @@ pdfhighlight=/N]{hyperref}
 
 \includegraphics[width=7cm]{G:/Diplom/rt11.jpg}
 
-Как можно заметить, значение ошибки и BLEU score после первых двух итераций сильно возрасло, связано это с тем, что параметры обучения не изменялись, лишь был произведён переход с одного пакета данных на другой. Чего нельзя сказать после прохождения нейронной сетью 3 итерации, для прохождения которой был изменён параметр "Learning rate". Для четвёртой, пятой,  шестой и седьмой мы получили примерно одинаковые значения, что уже говорит о более менее стабильной работе нейронной сети при смене некоторых параметров. Но, перед седьмой итерацией мы изменили значение "DropOut", изменение которого никак не повлияло, а когда вернули это значение в исходное положение перед восьмой итерацией, результаты сильно понизились. Для девятой так же наблюдается снижение результатов из-за нового формата изображений, но по итогу, в десятой и одиннадцатой мы наблюдаем возрастание результатов.
+Как можно заметить, значение ошибки и BLEU score после первых двух итераций сильно возрасло, связано это с тем, что параметры обучения не изменялись, лишь был произведён переход с одного пакета данных на другой. Чего нельзя сказать после прохождения нейронной сетью 3 итерации, для прохождения которой был изменён параметр "Learning rate". Для четвёртой, пятой,  шестой и седьмой мы получили примерно одинаковые значения, что уже говорит о более менее стабильной работе нейронной сети при смене некоторых параметров. Перед седьмой итерацией мы изменили значение "DropOut", что никак не повлияло, а когда вернули это значение в исходное положение перед восьмой итерацией, результаты сильно понизились. Для девятой так же наблюдается снижение результатов из-за нового формата изображений, но по итогу, в десятой и одиннадцатой мы наблюдаем улучшение результатов.
 
 \clearpage
 \addcontentsline{toc}{section}{Заключение}
 \section*{Заключение}
+
+В данной работе обучены две нейронных сети, одна из которых основана на GRU ячейке, а вторая на модели "Трансформер". Были получены две полностью рабочие нейронные сети, способные распозновать формулы любой сложности с изображений. По результатам обучения можно отметить, что нейронная сеть на модели "Трансформер" справилась с поставленной задачей намного лучше, чем нейронная сеть, основанная на GRU ячейке, даже с учётом того, что обе нейронные сети не всегда имели высшие показатели результатов в ходе обучения. Так же стоит отметить то, что сеть с GRU ячейкой, в отличии от второй сети, требовала в несколько раз больше времени и ресурсов для обучения, что не всегда является возможным для "домашнего" обучения. 
+
+
+
 \indent
 
 
@@ -384,19 +395,22 @@ pdfhighlight=/N]{hyperref}
 \begin{thebibliography}{99}
 \itemsep=0ex
 
-%\bibitem{Мак-Каллок У.С., Питтс В.} {Fork\,R.~L.} {Логическое исчесление идей, относящихся к нервной активности}~//
-%  {Science}.
-%\newblock 1971.
-%\newblock V. 171, No. 3974.
-%\newblock P.\,907--908.
-%
+\bibitem{Culloch1943} {W.S. McCulloch, W. Pitts.} {A logical calculus of the ideas immanent in nervous activity}~// {The Bulletin of Mathematical Biophysics}.
+\newblock 1943. 
+
+\bibitem{Widrow1964} {Bernard Widrow.} {Pattern Recognition and Adaptive Control}~// {IEEE Transaction on Applications and Industry}.
+\newblock 1964. 
+
+\bibitem{Geoffrey2011} {Graham W. Taylor, Geoffrey E. Hinton, Sam T. Roweis.} {Two distributed-state models for generating high-dimensional time series}~// {Journal of Machine Learning Research}.
+\newblock 2011.
+
 %\bibitem{Basser1991} {Basser\,P.~J., Roth\,B.~J.} {Stimulation of a myelinated nerve axon by
 %  electromagnetic induction}~// {Medical \& Biological Engineering \&
 %  Computing}.
 %\newblock 1991.
 %\newblock V.\,29, No.\,3.
 %\newblock P.\,261--268.
-%
+
 %\bibitem{Abaya2012} {Abaya\,T V~F, Blair\,S, Tathireddy\,P, Rieth\,L, Solzbacher\,F}. {A 3D
 %  glass optrode array for optical neural stimulation.}~// {Biomedical
 %  optics express}.
