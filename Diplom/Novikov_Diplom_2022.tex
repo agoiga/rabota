@@ -203,21 +203,171 @@ pdfhighlight=/N]{hyperref}
 
 \section{Описание модели}
 
+Данная сеть представляет собой свёрточную нейронную сеть. Они являются одними из самых актуальных на сегодняшний день типов по эффективности в распозновании объектов с видеофайлов и изображений. Для неё методом оптимизации выбран метод "Адам". Он вычисляет адаптивные показатели обучения для каждого из параметров.
+
 \section{Описание процесса обучения и оценки точности модели}
 
+В самом начале нужно подготовить среду обучения нейронной сети. Для этого устанавливаем соответствующие плагины:
+
+\includegraphics[width=5cm]{G:/Diplom/pl.jpg}
+
+Сам процесс обучения состоит из 11 итераций, для каждой из которых введены свои критерии обучения. К примеру для первой задаются такие параметры:
+
+\includegraphics[width=8cm]{G:/Diplom/t1.jpg}
+
+Так как это самая первая итерация, тут нейронная сеть обучается 100 эпох на минимальном наборе изображений (1200 элементов). Но всё дальнейшее обучение будет проходить на большом "hugedataset" наборе изображений (104 000 элементов).
+
+Единственным результатом обучения нейронной сети, который мы можем увидеть ялвяется проверочная часть в конце каждой эпохи и выглядит она так:
+
+\includegraphics[width=14cm]{G:/Diplom/it1.jpg}
+
+\includegraphics[width=14cm]{G:/Diplom/it2.jpg}
+
+Это результат проверочной работы нейросети после 100-ой эпохи обучения на наборе изображений "generatedset".
+
+\includegraphics[width=7cm]{G:/Diplom/rt1.1.jpg}
+
+Так же, после прохождения одной полной итерации, мы получаем оценку работы нейронной сети, в частности расчёт её ошибки и BLEU (Bi-Lingual Evaluation Understudy) значение, которое показывает насколько распознанная нейронной сетю формула совпадает с правильной фомулой. 
+
+По мере прохождения обучения параметры нейронной сети будут изменяться следующим образом. После первой итерации будет изменён пакет данных с "generatedset" на "hugedataset". Далее для третьей итерации будет изменено значение "Learning rate":
+
+\includegraphics[width=5cm]{G:/Diplom/lr1.jpg}
+
+Для четвёртой итерации снова будет изменён параметр "Learning rate":
+
+\includegraphics[width=5cm]{G:/Diplom/lr2.jpg}
+
+Для пятой обновлено значение "Batch size":
+
+\includegraphics[width=5cm]{G:/Diplom/bs1.jpg}
+
+Перед запуском шестой итерации изменяем значение "DownsampleImage" c "False" на "True", оно останется в этом положении до окончания обучения:
+
+\includegraphics[width=5cm]{G:/Diplom/dsi1.jpg}
+
+Для запуска седьмой, поменяем сразу три параметра:
+
+\includegraphics[width=5cm]{G:/Diplom/lr3.jpg}  \; \includegraphics[width=5cm]{G:/Diplom/do1.jpg}
+
+Для восьмой выставим исходное значение переменных "DropOut":
+
+\includegraphics[width=5cm]{G:/Diplom/do2.jpg}
+
+Для девятой сделаем такие изменения и переведём изображения в новый формат:
+
+\includegraphics[width=5cm]{G:/Diplom/lr4.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs2.jpg} \; \includegraphics[width=5cm]{G:/Diplom/f1.jpg}
+
+Для десятой вносём такие значения:
+
+\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do3.jpg}
+
+И, для завершающей обучение, одиннадцатой итерации изменяем эти параметры:
+
+\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs3.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do4.jpg}
+
 \section{Результаты численных экспериментов}
+
+Итоги первой итерации: \qquad\qquad\qquad\qquad Итоги второй итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt1.1.jpg}%\ \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt2.jpg}
+%\
+%\Итоги третьей итерации: \qquad\qquad\qquad\quad\; Итоги четвёртой итерации: 
+%\
+%\\includegraphics[width=7cm]{G:/Diplom/rt3.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt4.jpg}
+%\
+%\Итоги пятой итерации: \qquad\qquad\qquad\qquad\; Итоги шестой итерации: 
+%\
+%\\includegraphics[width=7cm]{G:/Diplom/rt5.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt6.jpg}
+%\
+%\Итоги седьмой итерации: \qquad\qquad\qquad\quad\; Итоги восьмой итерации: 
+%\
+%\\includegraphics[width=7cm]{G:/Diplom/rt7.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt8.jpg}
+%\
+%\Итоги девятой итерации: \qquad\qquad\qquad\quad\; Итоги десятой итерации: 
+%\
+%\\includegraphics[width=7cm]{G:/Diplom/rt9.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt10.jpg}
+%\
+%\Итоги одиннадцатой итерации:
+%\
+%\\includegraphics[width=7cm]{G:/Diplom/rt11.jpg}
 
 \chapter{Распознавания формул на изображениях глубокой нейронной сетью, основанной на трансформере}
 
 \section{Описание модели}
 
-Нейронная сеть с моделью "Трансформер" так же как и первая модель состоит из слоёв. Отличие её в том, что для отпимизации её скорости и обучения , она оснащена "механизмом внимания". Вместо того, чтобы полученная в процессе обучения информация переходила из одного слоя в другой, используется механизм, который принимает решение какой элемент входной последовательности имеет важное значение для конкретной формулы выходной последовательности. 
+Нейронная сеть с моделью "Трансформер" так же как и первая модель является свёрточной и состоит из слоёв. Отличие её в том, что для отпимизации её скорости и обучения , она оснащена "механизмом внимания". Вместо того, чтобы полученная в процессе обучения информация переходила из одного слоя в другой, используется механизм, который принимает решение какой элемент входной последовательности имеет важное значение для конкретной формулы выходной последовательности. 
 
 \section{Описание процесса обучения и оценки точности модели}
 
-Процесс обучения состоит из 11 заданий, для каждого из которых введены свои критерии обучения.
+Сам процесс обучения так же состоит из 11 итераций, для каждой из которых введены свои критерии обучения. К примеру для первой задаются те же параметры:
+
+\includegraphics[width=12cm]{G:/Diplom/t1.jpg}
+
+Так как это самая первая итерация, тут нейронная сеть обучается 100 эпох на минимальном наборе изображений (1200 элементов). Но всё дальнейшее обучение будет проходить на большом "hugedataset" наборе изображений (104 000 элементов). Так же, после прохождения одной полной итерации, мы получаем оценку работы нейронной сети, в частности расчёт её ошибки и BLEU (Bi-Lingual Evaluation Understudy) значение, которое показывает насколько распознанная нейронной сетю формула совпадает с правильно написанной. 
+
+По мере прохождения обучения параметры нейронной сети будут изменяться таким же образом. После первой итерации будет изменён пакет данных с "generatedset" на "hugedataset". Далее для третьей итерации будет изменено значение "Learning rate":
+
+\includegraphics[width=5cm]{G:/Diplom/lr1.jpg}
+
+Для четвёртой итерации снова будет изменён параметр "Learning rate":
+
+\includegraphics[width=5cm]{G:/Diplom/lr2.jpg}
+
+Для пятой обновлено значение "Batch size":
+
+\includegraphics[width=5cm]{G:/Diplom/bs1.jpg}
+
+Перед запуском шестой итерации изменяем значение "DownsampleImage" c "False" на "True", оно останется в этом положении до окончания обучения:
+
+\includegraphics[width=5cm]{G:/Diplom/dsi1.jpg}
+
+Для запуска седьмой, поменяем сразу три параметра:
+
+\includegraphics[width=5cm]{G:/Diplom/lr3.jpg}  \; \includegraphics[width=5cm]{G:/Diplom/do1.jpg}
+
+Для восьмой выставим исходное значение переменных "DropOut":
+
+\includegraphics[width=5cm]{G:/Diplom/do2.jpg}
+
+Для девятой сделаем такие изменения и переведём изображения в новый формат:
+
+\includegraphics[width=5cm]{G:/Diplom/lr4.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs2.jpg} \; \includegraphics[width=5cm]{G:/Diplom/f1.jpg}
+
+Для десятой вносём такие значения:
+
+\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do3.jpg}
+
+И, для завершающей обучение, одиннадцатой итерации изменяем эти параметры:
+
+\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs3.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do4.jpg}
 
 \section{Результаты численных экспериментов}
+
+Итоги первой итерации: \qquad\qquad\qquad\qquad Итоги второй итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt2.jpg}
+
+Итоги третьей итерации: \qquad\qquad\qquad\quad\; Итоги четвёртой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt3.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt4.jpg}
+
+Итоги пятой итерации: \qquad\qquad\qquad\qquad\; Итоги шестой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt5.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt6.jpg}
+
+Итоги седьмой итерации: \qquad\qquad\qquad\quad\; Итоги восьмой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt7.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt8.jpg}
+
+Итоги девятой итерации: \qquad\qquad\qquad\quad\; Итоги десятой итерации: 
+
+\includegraphics[width=7cm]{G:/Diplom/rt9.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt10.jpg}
+
+Итоги одиннадцатой итерации:
+
+\includegraphics[width=7cm]{G:/Diplom/rt11.jpg}
+
+Как можно заметить, значение ошибки и BLEU score после первых двух итераций сильно возрасло, связано это с тем, что параметры обучения не изменялись, лишь был произведён переход с одного пакета данных на другой. Чего нельзя сказать после прохождения нейронной сетью 3 итерации, для прохождения которой был изменён параметр "Learning rate". Для четвёртой, пятой,  шестой и седьмой мы получили примерно одинаковые значения, что уже говорит о более менее стабильной работе нейронной сети при смене некоторых параметров. Но, перед седьмой итерацией мы изменили значение "DropOut", изменение которого никак не повлияло, а когда вернули это значение в исходное положение перед восьмой итерацией, результаты сильно понизились. Для девятой так же наблюдается снижение результатов из-за нового формата изображений, но по итогу, в десятой и одиннадцатой мы наблюдаем возрастание результатов.
 
 \clearpage
 \addcontentsline{toc}{section}{Заключение}
@@ -234,7 +384,7 @@ pdfhighlight=/N]{hyperref}
 \begin{thebibliography}{99}
 \itemsep=0ex
 
-%\bibitem{Fork1971} {Fork\,R.~L.} {Laser Stimulation of Nerve Cells in Aplysia}~//
+%\bibitem{Мак-Каллок У.С., Питтс В.} {Fork\,R.~L.} {Логическое исчесление идей, относящихся к нервной активности}~//
 %  {Science}.
 %\newblock 1971.
 %\newblock V. 171, No. 3974.
