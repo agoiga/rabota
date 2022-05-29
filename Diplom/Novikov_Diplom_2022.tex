@@ -13,6 +13,7 @@
   left=2.5cm, right=1cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm,
 ]{geometry}
 \usepackage[T2A]{fontenc}
+\usepackage{caption}
 \usepackage[cp1251]{inputenc}
 \usepackage[english,russian]{babel}
 \ifpdf\usepackage{epstopdf}\fi
@@ -179,7 +180,7 @@ pdfhighlight=/N]{hyperref}
 %\addcontentsline{toc}{chapter}{Глава I Рассеяние плоской электромагнитной волны на миелинизированном аксоне}
 \section{Описание набора данных и подготовки набора данных}
 
-В качестве набора данных используются изображения с формулами, взятых с гарвардского проекта[4]. Набор состоит из двух пакетов "generateset" и ''hugedataset''. Первый представляет собой изображения с формулами в количестве 1700 штук, второй 104000 изображений."generatedset" будет использоваться только для первой итерации каждой нейронной сети, для последующих итераций будет использован ''hugedataset''.  Изначально мы имеем изображения формул на листе A4.
+В качестве набора данных используются изображения с формулами, взятых с гарвардского проекта[4]. Набор состоит из двух пакетов "generateset" и ''hugedataset''. Первый представляет собой изображения с формулами в количестве 1700 штук, второй 104000 изображений. "generatedset" будет использоваться только для первой итерации каждой нейронной сети, для последующих итераций будет использован ''hugedataset''.  Изначально мы имеем изображения формул на листе A4.
 
 \includegraphics[width=10cm]{G:/Diplom/h1.jpg}
 \includegraphics[width=4cm]{G:/Diplom/h11.jpg}
@@ -193,7 +194,9 @@ pdfhighlight=/N]{hyperref}
 
 \section{Описание модели}
 
-\includegraphics[width=5cm]{G:/Diplom/om.png}
+\begin{figure}
+\center{\includegraphics[width=5cm]{G:/Diplom/om.png}}\caption{Схема свёрточной сети, использованной в обучении.}
+\end{figure}
 
 Данная сеть представляет собой свёрточную нейронную сеть с несколькими стандартными нейронными компонентами из области зрения и обработки естественного языка. Сначала он извлекает объекты изображений с помощью свёрточной сети (CNN) и упорядочивает объекты в сетке, затем каждая строка кодируется с помощью рекурентной сети (RNN). После используется декодер с механизмом внимания. Визуальные признаки изображений извлекаются с помощью многослойной нейронной сети.Формально рекуррентная нейронная сеть представляет собой параметризированную функцию RNN, которая рекурсивно отображает входной вектор и скрытое состояние в новое скрытое состояние.
 
@@ -205,179 +208,441 @@ pdfhighlight=/N]{hyperref}
 
 \section{Описание процесса обучения и оценки точности модели}
 
-В самом начале нужно подготовить среду обучения нейронной сети. Для этого устанавливаем соответствующие плагины:
+В самом начале нужно подготовить среду обучения нейронной сети. 
 
-\includegraphics[width=5cm]{G:/Diplom/pl.jpg}
-
-Сам процесс обучения состоит из 11 итераций, для каждой из которых введены свои критерии обучения. К примеру для первой задаются такие параметры:
-
-\includegraphics[width=11cm]{G:/Diplom/t1.jpg}
+Сам процесс обучения состоит из 11 итераций(заданий), для каждой из которых введены свои критерии обучения. К примеру для первой задаются такие параметры:
+\begin{enumerate}
+\item Learning rate = 0.001
+\item Number of epochs = 100
+\item Batch size = 20
+\item ENC\_DROPOUT = 0.5
+\item DEC\_DROPOUT= 0.5
+\item DownsampleImage = False
+\item Height of image = 60
+\item Width of image = 360
+\end{enumerate}
 
 Так как это самая первая итерация, тут нейронная сеть обучается 100 эпох на минимальном наборе изображений (1200 элементов). Но всё дальнейшее обучение будет проходить на большом "hugedataset" наборе изображений (104 000 элементов).
 
 Единственным результатом обучения нейронной сети, который мы можем увидеть является проверочная часть в конце каждой эпохи и выглядит она так:
 
+\;
+
 \includegraphics[width=14cm]{G:/Diplom/it1.jpg}
 
 \includegraphics[width=14cm]{G:/Diplom/it2.jpg}
 
+\;
+
 Это результат проверочной работы нейросети после 100-ой эпохи обучения на наборе изображений "generatedset".
 
-\includegraphics[width=7cm]{G:/Diplom/rt1.1.jpg}
+После прохождения одной полной итерации, мы получаем оценку работы нейронной сети, в частности расчёт её ошибки и BLEU (Bi-Lingual Evaluation Understudy) значение, которое показывает насколько распознанная нейронной сетью формула совпадает с правильной фомулой. 
 
-Так же, после прохождения одной полной итерации, мы получаем оценку работы нейронной сети, в частности расчёт её ошибки и BLEU (Bi-Lingual Evaluation Understudy) значение, которое показывает насколько распознанная нейронной сетю формула совпадает с правильной фомулой. 
+\;
+
+Validate average loss: 8.536643981933594
+
+BLEU score = 12.42
+
+\;
 
 По мере прохождения обучения параметры нейронной сети будут изменяться следующим образом. После первой итерации будет изменён пакет данных с "generatedset" на "hugedataset". Далее для третьей итерации будет изменено значение "Learning rate":
 
-\includegraphics[width=5cm]{G:/Diplom/lr1.jpg}
+\;
+
+Learning rate = 0.01
+
+\;
 
 Для четвёртой итерации снова будет изменён параметр "Learning rate":
 
-\includegraphics[width=5cm]{G:/Diplom/lr2.jpg}
+\;
+
+Learning rate = 0.0001
+
+\;
 
 Для пятой обновлено значение "Batch size":
 
-\includegraphics[width=5cm]{G:/Diplom/bs1.jpg}
+\;
 
-Перед запуском шестой итерации изменяем значение "DownsampleImage" c "False" на "True", оно останется в этом положении до окончания обучения:
+Batch size = 16
 
-\includegraphics[width=5cm]{G:/Diplom/dsi1.jpg}
+\;
+
+Перед запуском шестой итерации изменяем значение "DownsampleImage" c "False" на "True", оно останется в этом положении до окончания обучения.
 
 Для запуска седьмой, поменяем сразу три параметра:
 
-\includegraphics[width=5cm]{G:/Diplom/lr3.jpg}  \; \includegraphics[width=5cm]{G:/Diplom/do1.jpg}
+\;
+
+\begin{enumerate}
+\item Learning rate = 0.00001
+\item ENC\_DROPOUT = 0.1
+\item DEC\_DROPOUT = 0.1
+\end{enumerate}
+
+\;
 
 Для восьмой выставим исходное значение переменных "DropOut":
 
-\includegraphics[width=5cm]{G:/Diplom/do2.jpg}
+\;
+
+\begin{enumerate}
+\item ENC\_DROPOUT = 0.5
+\item DEC\_DROPOUT = 0.5
+\end{enumerate}
+
+\;
 
 Для девятой сделаем такие изменения и переведём изображения в новый формат:
 
-\includegraphics[width=5cm]{G:/Diplom/lr4.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs2.jpg} \; \includegraphics[width=5cm]{G:/Diplom/f1.jpg}
+\;
 
-Для десятой вносём такие значения:
+\begin{enumerate}
+\item Learning rate = 0.0001
+\item Batch size = 6
+\item Height of image = 128
+\item Width of image = 512
+\end{enumerate}
 
-\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do3.jpg}
+\;
+
+Для десятой внесём такие значения:
+
+\;
+
+\begin{enumerate}
+\item Learning rate = 0.00001
+\item ENC\_DROPOUT = 0.1
+\item DEC\_DROPOUT = 0.1
+\end{enumerate}
+
+\;
 
 И, для завершающей обучение, одиннадцатой итерации изменяем эти параметры:
 
-\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs3.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do4.jpg}
+\;
+
+\begin{enumerate}
+\item Batch size = 3
+\item ENC\_DROPOUT = 0.0
+\item DEC\_DROPOUT = 0.0
+\end{enumerate}
+
 
 \section{Результаты численных экспериментов}
 
-Итоги первой итерации: \qquad\qquad\qquad\qquad Итоги второй итерации: 
+Итоги первой итерации: 
 
-\includegraphics[width=7cm]{G:/Diplom/rt1.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt2.1.jpg}
+Validate average loss: 8.536643981933594
 
-Итоги третьей итерации: \qquad\qquad\qquad\quad\; Итоги четвёртой итерации: 
+BLEU score = 12.42
 
-\includegraphics[width=7cm]{G:/Diplom/rt3.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt4.1.jpg}
+\;
 
-Итоги пятой итерации: \qquad\qquad\qquad\qquad\; Итоги шестой итерации: 
+Итоги второй итерации: 
 
-\includegraphics[width=7cm]{G:/Diplom/rt5.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt6.1.jpg}
+Validate average loss: 2.291751463846753
 
-Итоги седьмой итерации: \qquad\qquad\qquad\quad\; Итоги восьмой итерации: 
+BLEU score = 23.42
 
-\includegraphics[width=7cm]{G:/Diplom/rt7.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt8.1.jpg}
+\;
 
-Итоги девятой итерации: \qquad\qquad\qquad\quad\; Итоги десятой итерации: 
+Итоги третьей итерации: 
 
-\includegraphics[width=7cm]{G:/Diplom/rt9.1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt10.1.jpg}
+Validate average loss: 3.773274381954685
+
+BLEU score = 2.87
+
+\;
+
+Итоги четвёртой итерации: 
+
+Validate average loss: 4.963756845783645
+
+BLEU score = 10.19
+
+\;
+
+Итоги пятой итерации:  
+
+Validate average loss: 4.795395610563912
+
+BLEU score = 14.93
+
+\;
+
+Итоги шестой итерации: 
+
+Validate average loss: 8.862708091735844
+
+BLEU score = 16.16
+
+\;
+
+Итоги седьмой итерации:
+
+Validate average loss: 4.913547956497258
+
+BLEU score = 14.04
+
+\;
+
+Итоги восьмой итерации: 
+
+Validate average loss: 5.368844568714796
+
+BLEU score = 9.18
+
+\;
+
+Итоги девятой итерации: 
+
+Validate average loss: 5.017368428675382
+
+BLEU score = 5.70
+
+\;
+
+Итоги десятой итерации: 
+
+Validate average loss: 5.047398713594534
+
+BLEU score = 8.56
+
+\;
 
 Итоги одиннадцатой итерации:
 
-\includegraphics[width=7cm]{G:/Diplom/rt11.1.jpg}
+Validate average loss: 3.983458673284735
 
-Анализируя полученные результаты, стоит отметить, что при смене пакета изображений на "hugedataset", мы наблюдаем сильное улучшение результатов. Но, для первой и второй итераций параметры были неизменны. После прохождения 3 итерации можно заметить сильный спад результатов обучения, что и связанно с началом изменения критерий обучения. Пятая, шестая и седьмая итерации, по результатам обучения, примерно одинаковы. Для девятой итерации был введён новый формат изображений из-за чего качество распознования нейронной сетью сильно снижается, но в конечном итоге мы получаем, судя по нашим результатам, среднее значение для BLEU score и Validate average loss.
+BLEU score = 11.46
+
+\;
+
+Анализируя полученные результаты, стоит отметить, что при смене пакета изображений на "hugedataset", мы наблюдаем сильное улучшение результатов. Но, для первой и второй итераций параметры были неизменны. После прохождения 3 итерации можно заметить сильный спад результатов обучения, что и связанно с началом изменения критерий обучения. Пятая, шестая и седьмая итерации, по результатам обучения, примерно одинаковы. Для девятой итерации был введён новый формат изображений из-за чего качество распознавания нейронной сетью сильно снижается, но в конечном итоге мы получаем, судя по нашим результатам, среднее значение для BLEU score и Validate average loss.
 
 \chapter{Распознавания формул на изображениях глубокой нейронной сетью, основанной на трансформере}
 
 \section{Описание модели}
 
+\begin{figure}
+\center{\includegraphics[width=12cm]{G:/Diplom/st.jpg}}\caption{Схема одного из первых примеров применения механизмов внимания в глубоких нейронных сетях при помощи машин больцмана терьего порядка, созданая Юго Ларошелем и Хинтоном[6].}
+\end{figure}
+
+
 Нейронная сеть с моделью "Трансформер" так же как и первая модель является свёрточной и состоит из слоёв. Отличие её в том, что для отпимизации её скорости и обучения , она оснащена "механизмом внимания". Вместо того, чтобы полученная в процессе обучения информация переходила из одного слоя в другой, используется механизм, который принимает решение какой элемент входной последовательности имеет важное значение для конкретной формулы выходной последовательности. 
 
 \section{Описание процесса обучения и оценки точности модели}
 
-Сам процесс обучения так же состоит из 11 итераций, для каждой из которых введены свои критерии обучения. К примеру для первой задаются те же параметры:
+Сам процесс обучения состоит из 11 итераций(заданий), для каждой из которых введены свои критерии обучения. К примеру для первой задаются такие параметры:
+\begin{enumerate}
+\item Learning rate = 0.001
+\item Number of epochs = 100
+\item Batch size = 20
+\item ENC\_DROPOUT = 0.5
+\item DEC\_DROPOUT= 0.5
+\item DownsampleImage = False
+\item Height of image = 60
+\item Width of image = 360
+\end{enumerate}
 
-\includegraphics[width=12cm]{G:/Diplom/t1.jpg}
+Так как это самая первая итерация, тут нейронная сеть обучается 100 эпох на минимальном наборе изображений (1200 элементов). Но всё дальнейшее обучение будет проходить на большом "hugedataset" наборе изображений (104 000 элементов).
 
-Так как это самая первая итерация, тут нейронная сеть обучается 100 эпох на минимальном наборе изображений (1200 элементов). Но всё дальнейшее обучение будет проходить на большом "hugedataset" наборе изображений (104 000 элементов). Так же, после прохождения одной полной итерации, мы получаем оценку работы нейронной сети, в частности расчёт её ошибки и BLEU (Bi-Lingual Evaluation Understudy) значение, которое показывает насколько распознанная нейронной сетю формула совпадает с правильно написанной. 
+После прохождения одной полной итерации, мы получаем оценку работы нейронной сети, в частности расчёт её ошибки и BLEU (Bi-Lingual Evaluation Understudy) значение, которое показывает насколько распознанная нейронной сетью формула совпадает с правильной фомулой. 
 
-По мере прохождения обучения параметры нейронной сети будут изменяться таким же образом. После первой итерации будет изменён пакет данных с "generatedset" на "hugedataset". Далее для третьей итерации будет изменено значение "Learning rate":
+\;
 
-\includegraphics[width=5cm]{G:/Diplom/lr1.jpg}
+Validate average loss: 0.4935080707032117
+
+BLEU score = 77.71
+
+\;
+
+По мере прохождения обучения параметры нейронной сети будут изменяться следующим образом. После первой итерации будет изменён пакет данных с "generatedset" на "hugedataset". Далее для третьей итерации будет изменено значение "Learning rate":
+
+\;
+
+Learning rate = 0.01
+
+\;
 
 Для четвёртой итерации снова будет изменён параметр "Learning rate":
 
-\includegraphics[width=5cm]{G:/Diplom/lr2.jpg}
+\;
+
+Learning rate = 0.0001
+
+\;
 
 Для пятой обновлено значение "Batch size":
 
-\includegraphics[width=5cm]{G:/Diplom/bs1.jpg}
+\;
 
-Перед запуском шестой итерации изменяем значение "DownsampleImage" c "False" на "True", оно останется в этом положении до окончания обучения:
+Batch size = 16
 
-\includegraphics[width=5cm]{G:/Diplom/dsi1.jpg}
+\;
+
+Перед запуском шестой итерации изменяем значение "DownsampleImage" c "False" на "True", оно останется в этом положении до окончания обучения.
 
 Для запуска седьмой, поменяем сразу три параметра:
 
-\includegraphics[width=5cm]{G:/Diplom/lr3.jpg}  \; \includegraphics[width=5cm]{G:/Diplom/do1.jpg}
+\;
+
+\begin{enumerate}
+\item Learning rate = 0.00001
+\item ENC\_DROPOUT = 0.1
+\item DEC\_DROPOUT = 0.1
+\end{enumerate}
+
+\;
 
 Для восьмой выставим исходное значение переменных "DropOut":
 
-\includegraphics[width=5cm]{G:/Diplom/do2.jpg}
+\;
+
+\begin{enumerate}
+\item ENC\_DROPOUT = 0.5
+\item DEC\_DROPOUT = 0.5
+\end{enumerate}
+
+\;
 
 Для девятой сделаем такие изменения и переведём изображения в новый формат:
 
-\includegraphics[width=5cm]{G:/Diplom/lr4.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs2.jpg} \; \includegraphics[width=5cm]{G:/Diplom/f1.jpg}
+\;
 
-Для десятой вносём такие значения:
+\begin{enumerate}
+\item Learning rate = 0.0001
+\item Batch size = 6
+\item Height of image = 128
+\item Width of image = 512
+\end{enumerate}
 
-\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do3.jpg}
+\;
+
+Для десятой внесём такие значения:
+
+\;
+
+\begin{enumerate}
+\item Learning rate = 0.00001
+\item ENC\_DROPOUT = 0.1
+\item DEC\_DROPOUT = 0.1
+\end{enumerate}
+
+\;
 
 И, для завершающей обучение, одиннадцатой итерации изменяем эти параметры:
 
-\includegraphics[width=5cm]{G:/Diplom/lr5.jpg} \; \includegraphics[width=5cm]{G:/Diplom/bs3.jpg} \; \includegraphics[width=5cm]{G:/Diplom/do4.jpg}
+\;
+
+\begin{enumerate}
+\item Batch size = 3
+\item ENC\_DROPOUT = 0.0
+\item DEC\_DROPOUT = 0.0
+\end{enumerate}
 
 \section{Результаты численных экспериментов}
 
-Итоги первой итерации: \qquad\qquad\qquad\qquad Итоги второй итерации: 
+Итоги первой итерации: 
 
-\includegraphics[width=7cm]{G:/Diplom/rt1.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt2.jpg}
+Validate average loss: 0.4935080707032117
 
-Итоги третьей итерации: \qquad\qquad\qquad\quad\; Итоги четвёртой итерации: 
+BLEU score = 77.71
 
-\includegraphics[width=7cm]{G:/Diplom/rt3.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt4.jpg}
+\;
 
-Итоги пятой итерации: \qquad\qquad\qquad\qquad\; Итоги шестой итерации: 
+Итоги второй итерации: 
 
-\includegraphics[width=7cm]{G:/Diplom/rt5.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt6.jpg}
+Validate average loss: 0.17141498625278473
+
+BLEU score = 93.28
+
+\;
+
+Итоги третьей итерации:
+
+Validate average loss: 2.70721435546875
+
+BLEU score = 17.54
 
 \;
 
 \;
 
-Итоги седьмой итерации: \qquad\qquad\qquad\quad\; Итоги восьмой итерации: 
+Итоги четвёртой итерации: 
 
-\includegraphics[width=7cm]{G:/Diplom/rt7.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt8.jpg}
+Validate average loss: 2.249237537384033
 
-Итоги девятой итерации: \qquad\qquad\qquad\quad\; Итоги десятой итерации: 
+BLEU score = 25.63
 
-\includegraphics[width=7cm]{G:/Diplom/rt9.jpg} \qquad\qquad\; \includegraphics[width=7cm]{G:/Diplom/rt10.jpg}
+\;
+
+Итоги пятой итерации:
+
+Validate average loss: 2.248100757598877
+
+BLEU score = 26.14
+
+\;
+
+Итоги шестой итерации: 
+
+Validate average loss: 2.2580454349517822
+
+BLEU score = 24.55
+
+\;
+
+Итоги седьмой итерации:
+
+Validate average loss: 2.2548861503601074
+
+BLEU score = 24.29
+
+\;
+
+Итоги восьмой итерации: 
+
+Validate average loss: 2.4864206314086914
+
+BLEU score = 16.67
+
+\;
+
+Итоги девятой итерации:
+
+Validate average loss: 2.5360090732574463
+
+BLEU score = 14.42
+
+\;
+
+Итоги десятой итерации: 
+
+Validate average loss: 2.2908096313476562
+
+BLEU score = 21.89
+
+\;
 
 Итоги одиннадцатой итерации:
 
-\includegraphics[width=7cm]{G:/Diplom/rt11.jpg}
+Validate average loss: 2.1443867683410645
 
-Как можно заметить, значение ошибки и BLEU score после первых двух итераций сильно возрасло, связано это с тем, что параметры обучения не изменялись, лишь был произведён переход с одного пакета данных на другой. Чего нельзя сказать после прохождения нейронной сетью 3 итерации, для прохождения которой был изменён параметр "Learning rate". Для четвёртой, пятой,  шестой и седьмой мы получили примерно одинаковые значения, что уже говорит о более менее стабильной работе нейронной сети при смене некоторых параметров. Перед седьмой итерацией мы изменили значение "DropOut", что никак не повлияло, а когда вернули это значение в исходное положение перед восьмой итерацией, результаты сильно понизились. Для девятой так же наблюдается снижение результатов из-за нового формата изображений, но по итогу, в десятой и одиннадцатой мы наблюдаем улучшение результатов.
+BLEU score = 25.05
+
+\;
+
+Как можно заметить, значение ошибки и BLEU score после первых двух итераций сильно возросло, связано это с тем, что параметры обучения не изменялись, лишь был произведён переход с одного пакета данных на другой. Чего нельзя сказать после прохождения нейронной сетью 3 итерации, для прохождения которой был изменён параметр "Learning rate". Для четвёртой, пятой,  шестой и седьмой мы получили примерно одинаковые значения, что уже говорит о более-менее стабильной работе нейронной сети при смене некоторых параметров. Перед седьмой итерацией мы изменили значение "DropOut", что никак не повлияло, а когда вернули это значение в исходное положение перед восьмой итерацией, результаты сильно понизились. Для девятой так же наблюдается снижение результатов из-за нового формата изображений, но по итогу, в десятой и одиннадцатой мы наблюдаем улучшение результатов.
 
 \clearpage
 \addcontentsline{toc}{section}{Заключение}
 \section*{Заключение}
 
-В данной работе обучены две нейронных сети, одна из которых основана на GRU ячейке, а вторая на модели "Трансформер". Были получены две полностью рабочие нейронные сети, способные распозновать формулы любой сложности с изображений. По результатам обучения можно отметить, что нейронная сеть на модели "Трансформер" справилась с поставленной задачей намного лучше, чем нейронная сеть, основанная на GRU ячейке, даже с учётом того, что обе нейронные сети не всегда имели высшие показатели результатов в ходе обучения. Так же стоит отметить то, что сеть с GRU ячейкой, в отличии от второй сети, требовала в несколько раз больше времени и ресурсов для обучения, что не всегда является возможным для "домашнего" обучения. 
+В данной работе обучены две нейронных сети, одна из которых основана на GRU ячейке, а вторая на модели "Трансформер". Были получены две полностью рабочие нейронные сети, способные распознавать формулы любой сложности с изображений. По результатам обучения можно отметить, что нейронная сеть на модели "Трансформер" справилась с поставленной задачей намного лучше, чем нейронная сеть, основанная на GRU ячейке, даже с учётом того, что обе нейронные сети не всегда имели высшие показатели результатов в ходе обучения. Так же стоит отметить то, что сеть с GRU ячейкой, в отличии от второй сети, требовала в несколько раз больше времени и ресурсов для обучения, что не всегда является возможным для "домашнего" обучения. 
 
 
 
@@ -402,11 +667,14 @@ pdfhighlight=/N]{hyperref}
 \bibitem{Geoffrey2011} {Graham W. Taylor, Geoffrey E. Hinton, Sam T. Roweis.} {Two distributed-state models for generating high-dimensional time series}~// {Journal of Machine Learning Research}.
 \newblock 2011.
 
-\bibitem{Yuntian} {Yuntian Deng, Sasha Rush, Hyliu.} {Neural model for converting Image-to-Markup}~// {by Yuntian Deng yuntiandeng.com}.
+\bibitem{Yuntian} {Yuntian Deng, Sasha Rush, Hyliu.} {Neural model for converting Image-to-Markup}~// {by Yuntian Deng zenodo.org/record/56198}.
 \newblock 2016.
 
 \bibitem{Yuntian5} {Yuntian Deng, Anssi Kanervisto, Alexander M. Rush.} {A Visual Markup Decompiler}~// {What You Get Is What You See}.
 \newblock 16 Sep 2016.
+
+\bibitem{Larochelle} {Larochelle H., Hinton G. E.} {Learning to Combine Foveal Glmpses with a Third-Order Boltzmann Machine}~// {Advances in Neural Information Processind System 23}.
+\newblock 2010.
 
 %\bibitem{Basser1991} {Basser\,P.~J., Roth\,B.~J.} {Stimulation of a myelinated nerve axon by
 %  electromagnetic induction}~// {Medical \& Biological Engineering \&
