@@ -1,32 +1,38 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.14)  7 JUN 2022 18:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.6)  9 JUN 2022 12:49
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**G:/Diplom/Novikov_Diplom_2022.tex
-(G:/Diplom/Novikov_Diplom_2022.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (G:/Diplom\disser.cls
+**./Novikov_Diplom_2022.tex
+(Novikov_Diplom_2022.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-08-27> (disser.cls
 Document Class: disser 2009/11/20 1.1.4 Document class for dissertations
-(G:\Latexx\tex/generic/iftex\ifpdf.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
- (G:\Latexx\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)) (G:\Latexx\tex/latex/kvoptions\kvoptions.sty
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoption
+s.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
-(G:\Latexx\tex/latex/graphics\keyval.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(G:\Latexx\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.
+sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(G:\Latexx\tex/generic/kvsetkeys\kvsetkeys.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetk
+eys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(G:\Latexx\tex/latex/extsizes\size14.clo
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/extsizes\size14.cl
+o
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
-) (G:\Latexx\tex/latex/base\exscale.sty
+)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
@@ -35,49 +41,54 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
 \big@size=\dimen138
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
+\c@part=\count182
+\c@chapter=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
+\c@figure=\count189
+\c@table=\count190
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \footnoteindent=\skip49
- (G:/Diplom\titledefs.rtx
+
+(titledefs.rtx
 File: titledefs.rtx 
 )
 \bibindent=\dimen139
- (G:\Latexx\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y
+Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(G:\Latexx\tex/latex/amsmath\amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
 
-(G:\Latexx\tex/latex/amsmath\amsgen.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen140
 ))
-(G:\Latexx\tex/latex/amsmath\amsbsy.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen141
 )
-(G:\Latexx\tex/latex/amsmath\amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count194
+\inf@bad=\count191
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count195
-\leftroot@=\count196
+\uproot@=\count192
+\leftroot@=\count193
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count197
-\DOTSCASE@=\count198
+\classnum@=\count194
+\DOTSCASE@=\count195
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -86,15 +97,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen142
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count199
-\c@MaxMatrixCols=\count266
+\macc@depth=\count196
+\c@MaxMatrixCols=\count197
 \dotsspace@=\muskip16
-\c@parentequation=\count267
-\dspbrk@lvl=\count268
+\c@parentequation=\count198
+\dspbrk@lvl=\count199
 \tag@help=\toks18
-\row@=\count269
-\column@=\count270
-\maxfields@=\count271
+\row@=\count266
+\column@=\count267
+\maxfields@=\count268
 \andhelp@=\toks19
 \eqnshift@=\dimen143
 \alignsep@=\dimen144
@@ -106,13 +117,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \multlinegap=\skip51
 \multlinetaggap=\skip52
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
-(G:\Latexx\tex/latex/amsfonts\amssymb.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(G:\Latexx\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -124,41 +137,43 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 LaTeX Font Info:    Redeclaring math symbol \intop on input line 1374.
 LaTeX Font Info:    Redeclaring math symbol \ointop on input line 1375.
 
-(G:\Latexx\tex/latex/natbib\natbib.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count272
+\c@NAT@ctr=\count269
 )
-(G:\Latexx\tex/latex/wrapfig\wrapfig.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.st
+y
 \wrapoverhang=\dimen149
 \WF@size=\dimen150
-\c@WF@wrappedlines=\count273
+\c@WF@wrappedlines=\count270
 \WF@box=\box52
 \WF@everypar=\toks22
 Package: wrapfig 2003/01/31  v 3.6
 )
-(G:\Latexx\tex/latex/caption\caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
+y
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
-(G:\Latexx\tex/latex/caption\caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen151
-\captionmargin=\dimen152
-\caption@leftmargin=\dimen153
-\caption@rightmargin=\dimen154
-\caption@width=\dimen155
-\caption@indent=\dimen156
-\caption@parindent=\dimen157
-\caption@hangindent=\dimen158
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
+ty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen151
+\captionmargin@=\dimen152
+\captionwidth=\dimen153
+\caption@tempdima=\dimen154
+\caption@indent=\dimen155
+\caption@parindent=\dimen156
+\caption@hangindent=\dimen157
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
 p \sbox \@tempboxa {{\captionlabelfont #1\captionlabeldelim } {\captionfont #2}
 }\ifdim \wd \@tempboxa >\hsize {{\captionlabelfont #1\captionlabeldelim } {\cap
 tionfont #2}}\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@te
-mpboxa \hfil }\fi \vskip \belowcaptionskip  on input line 1176.
+mpboxa \hfil }\fi \vskip \belowcaptionskip  on input line 1139.
 )
 
 Package caption Warning: Unknown document class (or package),
@@ -167,17 +182,18 @@ See the caption package documentation for explanation.
 
 
 Package caption Warning: Configuration file caption.cfg not found on input line
- 169.
+ 187.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count274
-\c@continuedfloat=\count275
+\c@caption@flags=\count271
+\c@continuedfloat=\count272
 Package caption Info: wrapfig package is loaded.
-) (G:\Latexx\tex/latex/subfig\subfig.sty
+)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count276
+\c@KVtest=\count273
 \sf@farskip=\skip55
-\sf@captopadj=\dimen159
+\sf@captopadj=\dimen158
 \sf@capskip=\skip56
 \sf@nearskip=\skip57
 
@@ -185,64 +201,74 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 Package subfig Warning: Configuration file subfig.cfg not found on input line 2
 97.
 
-\c@subfigure=\count277
-\c@subfigure@save=\count278
-\c@lofdepth=\count279
-\c@subtable=\count280
-\c@subtable@save=\count281
-\c@lotdepth=\count282
+\c@subfigure=\count274
+\c@subfigure@save=\count275
+\c@lofdepth=\count276
+\c@subtable=\count277
+\c@subtable@save=\count278
+\c@lotdepth=\count279
 \sf@top=\skip58
 \sf@bottom=\skip59
-) (G:\Latexx\tex/latex/graphics\graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
 
-(G:\Latexx\tex/latex/graphics\graphics.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(G:\Latexx\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(G:\Latexx\tex/latex/graphics-cfg\graphics.cfg
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(G:\Latexx\tex/latex/graphics-def\pdftex.def
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen160
-\Gin@req@width=\dimen161
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
 )
-(G:\Latexx\tex/latex/cmap\cmap.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cmap\cmap.sty
 Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
-)) (G:\Latexx\tex/latex/geometry\geometry.sty
+))
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-(G:\Latexx\tex/generic/iftex\ifvtex.sty
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count283
-\Gm@cntv=\count284
-\c@Gm@tempcnt=\count285
-\Gm@bindingoffset=\dimen162
-\Gm@wd@mp=\dimen163
-\Gm@odd@mp=\dimen164
-\Gm@even@mp=\dimen165
-\Gm@layoutwidth=\dimen166
-\Gm@layoutheight=\dimen167
-\Gm@layouthoffset=\dimen168
-\Gm@layoutvoffset=\dimen169
+\Gm@cnth=\count280
+\Gm@cntv=\count281
+\c@Gm@tempcnt=\count282
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
 \Gm@dimlist=\toks23
 
-(G:\Latexx\tex/latex/geometry\geometry.cfg))
-(G:\Latexx\tex/latex/base\fontenc.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+cfg))
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
- (G:\Latexx\tex/latex/cyrillic\t2aenc.def
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2aenc.de
+f
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
-
-(G:\Latexx\tex/latex/base\t2aenc.dfu
-File: t2aenc.dfu 2021/06/21 v1.2n UTF-8 support
+ (C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t2aenc.dfu
+File: t2aenc.dfu 2021/01/27 v1.2l UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00AB (decimal 171)
@@ -442,64 +468,51 @@ File: t2aenc.dfu 2021/06/21 v1.2n UTF-8 support
 ))
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
 12.
- (G:\Latexx\tex/latex/cyrillic\t2acmr.fd
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
-
-! LaTeX Error: File `wrapfigure.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-(G:\Latexx\tex/latex/float\float.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count286
+\c@float@type=\count283
 \float@exts=\toks24
 \float@box=\box53
 \@float@everytoks=\toks25
 \@floatcapt=\box54
 )
-(G:\Latexx\tex/latex/floatrow\floatrow.sty
-Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-
-
-! Package floatrow Error: Do not use float package with floatrow.
-(floatrow)                The latter will be skipped.
-
-See the floatrow package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33   \@namedef{opt@floatrow.sty}{}\endinput}
-                                              
-? 
-) (G:\Latexx\tex/latex/base\inputenc.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks26
 \inpenc@posthook=\toks27
 
-(G:\Latexx\tex/latex/cyrillic\cp1251.def
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\cp1251.de
+f
 File: cp1251.def 2014/10/28 v1.0d Input encoding file
 ))
-(G:\Latexx\tex/generic/babel\babel.sty
-Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count287
-\U@D=\dimen170
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty
+Package: babel 2021/07/22 3.63 The Babel package
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def
+File: babel.def 2021/07/22 3.63 Babel common definitions
+\babel@savecnt=\count284
+\U@D=\dimen169
 \l@unhyphenated=\language79
 
-(G:\Latexx\tex/generic/babel\txtbabel.def)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count288
+)
+\bbl@dirlevel=\count285
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(G:\Latexx\tex/latex/arabi\bblopts.cfg
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(G:\Latexx\tex/latex/babel-english\english.ldf
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
+ish.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -508,32 +521,38 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
 )
-(G:\Latexx\tex/latex/babel-russian\russianb.ldf
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-russian\russ
+ianb.ldf
 File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
 Language: russian 2020/09/09 1.3k Russian support for the Babel system
 Package babel Info: Making " an active character on input line 124.
 Package babel Info: Default for \cyrdash is provided on input line 163.
 ))
-(G:\Latexx\tex/latex/epstopdf-pkg\epstopdf.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
 
-(G:\Latexx\tex/generic/infwarerr\infwarerr.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwar
+err.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(G:\Latexx\tex/latex/grfext\grfext.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(G:\Latexx\tex/generic/kvdefinekeys\kvdefinekeys.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvd
+efinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-(G:\Latexx\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdftexcmds\pdfte
+xcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(G:\Latexx\tex/latex/epstopdf-pkg\epstopdf-base.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
@@ -542,110 +561,131 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(G:\Latexx\tex/latex/00miktex\epstopdf-sys.cfg
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\epstopdf-
+sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )))
-(G:\Latexx\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
+sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(G:\Latexx\tex/generic/pdfescape\pdfescape.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfesc
+ape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(G:\Latexx\tex/latex/hycolor\hycolor.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.st
+y
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(G:\Latexx\tex/latex/letltxmacro\letltxmacro.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltx
+macro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(G:\Latexx\tex/latex/auxhook\auxhook.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.st
+y
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen171
-\Hy@linkcounter=\count289
-\Hy@pagecounter=\count290
+\@linkdim=\dimen170
+\Hy@linkcounter=\count286
+\Hy@pagecounter=\count287
 
-(G:\Latexx\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
+f
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(G:\Latexx\tex/generic/intcalc\intcalc.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref-
+langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.
+sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(G:\Latexx\tex/generic/etexcmds\etexcmds.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcmd
+s.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count291
+\Hy@SavedSpaceFactor=\count288
 
-(G:\Latexx\tex/latex/hyperref\puenc.def
-File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 3128.
-Package hyperref Info: Option `unicode' set `true' on input line 4018.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4018.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4018.
-Package hyperref Info: Hyper figures OFF on input line 4137.
-Package hyperref Info: Link nesting OFF on input line 4142.
-Package hyperref Info: Hyper index ON on input line 4145.
-Package hyperref Info: Plain pages OFF on input line 4152.
-Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Option `unicode' set `true' on input line 3167.
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count292
- (G:\Latexx\tex/latex/url\url.sty
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count289
+ (C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen172
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen171
 
-(G:\Latexx\tex/generic/bitset\bitset.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.st
+y
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(G:\Latexx\tex/generic/bigintcalc\bigintcalc.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigin
+tcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count293
-\Field@Width=\dimen173
-\Fld@charsize=\dimen174
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring ON on input line 6045.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
-LaTeX Info: Redefining \ref on input line 6097.
-LaTeX Info: Redefining \pageref on input line 6101.
+\Fld@menulength=\count290
+\Field@Width=\dimen172
+\Fld@charsize=\dimen173
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
-(G:\Latexx\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\atbegshi-ltx.
+sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count294
-\c@Item=\count295
-\c@Hfootnote=\count296
+\Hy@abspage=\count291
+\c@Item=\count292
+\c@Hfootnote=\count293
 )
 Package hyperref Info: Driver: hpdftex.
 
-(G:\Latexx\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
+ef
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
-(G:\Latexx\tex/latex/base\atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\atveryend-ltx
+.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
 with kernel methods
 )
-\Fld@listcount=\count297
-\c@bookmark@seq@number=\count298
+\Fld@listcount=\count294
+\c@bookmark@seq@number=\count295
 
-(G:\Latexx\tex/latex/rerunfilecheck\rerunfilecheck.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rer
+unfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(G:\Latexx\tex/generic/uniquecounter\uniquecounter.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\un
+iquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -653,52 +693,53 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip60
 )
-(G:\Latexx\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count299
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
+d-pdftex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box55
-)
-No file Novikov_Diplom_2022.aux.
+) (Novikov_Diplom_2022.aux)
 \openout1 = `Novikov_Diplom_2022.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
-Package caption Info: floatrow package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-(G:\Latexx\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count300
-\scratchdimen=\dimen175
+\scratchcounter=\count297
+\scratchdimen=\dimen174
 \scratchbox=\box56
-\nofMPsegments=\count301
-\nofMParguments=\count302
+\nofMPsegments=\count298
+\nofMParguments=\count299
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count303
-\MPscratchDim=\dimen176
-\MPnumerator=\count304
-\makeMPintoPDFobject=\count305
+\MPscratchCnt=\count300
+\MPscratchDim=\dimen175
+\MPnumerator=\count301
+\makeMPintoPDFobject=\count302
 \everyMPtoPDFconversion=\toks29
 )
 *geometry* driver: auto-detecting
@@ -735,37 +776,61 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \th on input line 115.
-(G:\Latexx\tex/latex/graphics\color.sty
-Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+LaTeX Info: Redefining \th on input line 114.
 
-(G:\Latexx\tex/latex/graphics-cfg\color.cfg
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color
+.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 115.
+Package hyperref Info: Link coloring ON on input line 114.
 
-(G:\Latexx\tex/latex/hyperref\nameref.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
+ty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(G:\Latexx\tex/latex/refcount\refcount.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.
+sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(G:\Latexx\tex/generic/gettitlestring\gettitlestring.sty
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\g
+ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count306
+\c@section@level=\count303
 )
-LaTeX Info: Redefining \ref on input line 115.
-LaTeX Info: Redefining \pageref on input line 115.
-LaTeX Info: Redefining \nameref on input line 115.
+LaTeX Info: Redefining \ref on input line 114.
+LaTeX Info: Redefining \pageref on input line 114.
+LaTeX Info: Redefining \nameref on input line 114.
+ (Novikov_Diplom_2022.out) (Novikov_Diplom_2022.out)
 \@outlinefile=\write3
 \openout3 = `Novikov_Diplom_2022.out'.
 
- [1
 
-{C:/Users/1369563/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+[1
+
+{C:/Users/Meijin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(Novikov_Diplom_2022.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+euex on input line 2.
+
+
+(C:\Users\Meijin\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueuex.fd
+File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
+))
 \tf@toc=\write4
 \openout4 = `Novikov_Diplom_2022.toc'.
 
@@ -773,191 +838,148 @@ LaTeX Info: Redefining \nameref on input line 115.
 
 ] [3
 
-] [4] [5] [6]
+] [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 13.70703pt
-(hyperref)                replaced by space on input line 236.
+(hyperref)                replaced by space on input line 208.
 
-
-LaTeX Warning: Reference `fig:image1.1' on page 7 undefined on input line 240.
-
-<G:/Diplom/h1.jpg, id=37, 417.81094pt x 531.48563pt>
-File: G:/Diplom/h1.jpg Graphic file (type jpg)
-<use G:/Diplom/h1.jpg>
-Package pdftex.def Info: G:/Diplom/h1.jpg  used on input line 243.
+<h1.jpg, id=99, 417.81094pt x 531.48563pt>
+File: h1.jpg Graphic file (type jpg)
+<use h1.jpg>
+Package pdftex.def Info: h1.jpg  used on input line 215.
 (pdftex.def)             Requested size: 226.7685pt x 288.47395pt.
-<G:/Diplom/h11.jpg, id=38, 123.46124pt x 170.88844pt>
-File: G:/Diplom/h11.jpg Graphic file (type jpg)
-<use G:/Diplom/h11.jpg>
-Package pdftex.def Info: G:/Diplom/h11.jpg  used on input line 244.
+<h11.jpg, id=100, 123.46124pt x 170.88844pt>
+File: h11.jpg Graphic file (type jpg)
+<use h11.jpg>
+Package pdftex.def Info: h11.jpg  used on input line 216.
 (pdftex.def)             Requested size: 113.81102pt x 157.54pt.
+[5
 
-LaTeX Warning: Reference `fig:image1.2' on page 7 undefined on input line 249.
-
-[7
-
- <G:/Diplom/h1.jpg> <G:/Diplom/h11.jpg>]
-<G:/Diplom/h2.jpg, id=48, 417.81094pt x 529.98pt>
-File: G:/Diplom/h2.jpg Graphic file (type jpg)
-<use G:/Diplom/h2.jpg>
-Package pdftex.def Info: G:/Diplom/h2.jpg  used on input line 252.
+ <./h1.jpg> <./h11.jpg>]
+<h2.jpg, id=108, 417.81094pt x 529.98pt>
+File: h2.jpg Graphic file (type jpg)
+<use h2.jpg>
+Package pdftex.def Info: h2.jpg  used on input line 224.
 (pdftex.def)             Requested size: 226.7685pt x 287.65672pt.
-<G:/Diplom/h22.jpg, id=49, 103.88812pt x 91.84312pt>
-File: G:/Diplom/h22.jpg Graphic file (type jpg)
-<use G:/Diplom/h22.jpg>
-Package pdftex.def Info: G:/Diplom/h22.jpg  used on input line 253.
+<h22.jpg, id=109, 103.88812pt x 91.84312pt>
+File: h22.jpg Graphic file (type jpg)
+<use h22.jpg>
+Package pdftex.def Info: h22.jpg  used on input line 225.
 (pdftex.def)             Requested size: 113.81102pt x 100.6199pt.
-<G:/Diplom/gru.jpg, id=50, 921.69pt x 306.9pt>
-File: G:/Diplom/gru.jpg Graphic file (type jpg)
-<use G:/Diplom/gru.jpg>
-Package pdftex.def Info: G:/Diplom/gru.jpg  used on input line 263.
+<gru.jpg, id=110, 921.69pt x 306.9pt>
+File: gru.jpg Graphic file (type jpg)
+<use gru.jpg>
+Package pdftex.def Info: gru.jpg  used on input line 235.
 (pdftex.def)             Requested size: 483.69684pt x 161.05466pt.
- [8 <G:/Diplom/h2.jpg> <G:/Diplom/h22.jpg>]
+ [6 <./h2.jpg> <./h22.jpg>]
+Underfull \hbox (badness 1102) in paragraph at lines 240--241
+[]\T2A/cmr/m/n/14.4 Данная сеть ([][]1.3[][]) представляет собой свјрточн
+ую нейронную сеть с
+ []
 
-LaTeX Warning: Reference `fig:image1.3' on page 9 undefined on input line 268.
-
-<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 270
-.
-
-(G:\Latexx\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 270
-.
- (G:\Latexx\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+euex on input line 27
-0.
-
-(G:\Latexx\tex/latex/amsfonts\ueuex.fd
-File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
-) [9 <G:/Diplom/gru.jpg>]
-
-LaTeX Warning: Reference `fig:image1.4' on page 10 undefined on input line 292.
-
-
-<G:/Diplom/it1.jpg, id=72, 1333.23094pt x 627.84563pt>
-File: G:/Diplom/it1.jpg Graphic file (type jpg)
-<use G:/Diplom/it1.jpg>
-Package pdftex.def Info: G:/Diplom/it1.jpg  used on input line 297.
+[7 <./gru.jpg>]
+<it1.jpg, id=130, 1333.23094pt x 627.84563pt>
+File: it1.jpg Graphic file (type jpg)
+<use it1.jpg>
+Package pdftex.def Info: it1.jpg  used on input line 269.
 (pdftex.def)             Requested size: 369.88582pt x 174.18611pt.
-<G:/Diplom/it2.jpg, id=73, 1349.79282pt x 643.6547pt>
-File: G:/Diplom/it2.jpg Graphic file (type jpg)
-<use G:/Diplom/it2.jpg>
-Package pdftex.def Info: G:/Diplom/it2.jpg  used on input line 298.
+<it2.jpg, id=131, 1349.79282pt x 643.6547pt>
+File: it2.jpg Graphic file (type jpg)
+<use it2.jpg>
+Package pdftex.def Info: it2.jpg  used on input line 270.
 (pdftex.def)             Requested size: 369.88582pt x 176.38193pt.
-[10] [11 <G:/Diplom/it1.jpg> <G:/Diplom/it2.jpg>] [12] [13] [14]
-<G:/Diplom/bleugru.jpg, id=121, 295.1025pt x 202.50656pt>
-File: G:/Diplom/bleugru.jpg Graphic file (type jpg)
-<use G:/Diplom/bleugru.jpg>
-Package pdftex.def Info: G:/Diplom/bleugru.jpg  used on input line 493.
+ [8] [9 <./it1.jpg> <./it2.jpg>] [10] [11] [12]
+<bleugru.jpg, id=176, 295.1025pt x 202.50656pt>
+File: bleugru.jpg Graphic file (type jpg)
+<use bleugru.jpg>
+Package pdftex.def Info: bleugru.jpg  used on input line 465.
 (pdftex.def)             Requested size: 227.62204pt x 156.20242pt.
-<G:/Diplom/lbgru.jpg, id=122, 294.34969pt x 198.7425pt>
-File: G:/Diplom/lbgru.jpg Graphic file (type jpg)
-<use G:/Diplom/lbgru.jpg>
-Package pdftex.def Info: G:/Diplom/lbgru.jpg  used on input line 496.
+<lbgru.jpg, id=177, 294.34969pt x 198.7425pt>
+File: lbgru.jpg Graphic file (type jpg)
+<use lbgru.jpg>
+Package pdftex.def Info: lbgru.jpg  used on input line 468.
 (pdftex.def)             Requested size: 227.62204pt x 153.69025pt.
-<G:/Diplom/valgru.jpg, id=123, 294.34969pt x 205.5178pt>
-File: G:/Diplom/valgru.jpg Graphic file (type jpg)
-<use G:/Diplom/valgru.jpg>
-Package pdftex.def Info: G:/Diplom/valgru.jpg  used on input line 499.
+<valgru.jpg, id=178, 294.34969pt x 205.5178pt>
+File: valgru.jpg Graphic file (type jpg)
+<use valgru.jpg>
+Package pdftex.def Info: valgru.jpg  used on input line 471.
 (pdftex.def)             Requested size: 227.62204pt x 158.92969pt.
- [15 <G:/Diplom/bleugru.jpg> <G:/Diplom/lbgru.jpg> <G:/Diplom/valgru.jpg>] [16]
-
+ [13 <./bleugru.jpg> <./lbgru.jpg> <./valgru.jpg>] [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 13.70703pt
-(hyperref)                replaced by space on input line 506.
+(hyperref)                replaced by space on input line 478.
 
-<G:/Diplom/st.jpg, id=133, 793.46437pt x 264.99pt>
-File: G:/Diplom/st.jpg Graphic file (type jpg)
-<use G:/Diplom/st.jpg>
-Package pdftex.def Info: G:/Diplom/st.jpg  used on input line 511.
+<st.jpg, id=189, 793.46437pt x 264.99pt>
+File: st.jpg Graphic file (type jpg)
+<use st.jpg>
+Package pdftex.def Info: st.jpg  used on input line 483.
 (pdftex.def)             Requested size: 341.43306pt x 114.02838pt.
-<G:/Diplom/tran.jpg, id=134, 901.9296pt x 456.7464pt>
-File: G:/Diplom/tran.jpg Graphic file (type jpg)
-<use G:/Diplom/tran.jpg>
-Package pdftex.def Info: G:/Diplom/tran.jpg  used on input line 516.
+<tran.jpg, id=190, 901.9296pt x 456.7464pt>
+File: tran.jpg Graphic file (type jpg)
+<use tran.jpg>
+Package pdftex.def Info: tran.jpg  used on input line 488.
 (pdftex.def)             Requested size: 426.79134pt x 216.1344pt.
+[15
 
-LaTeX Warning: Reference `fig:image2.1' on page 17 undefined on input line 521.
-
-
-[17
-
- <G:/Diplom/st.jpg> <G:/Diplom/tran.jpg>] [18] [19] [20] [21]
-<G:/Diplom/bleutr.jpg, id=185, 266.49562pt x 180.675pt>
-File: G:/Diplom/bleutr.jpg Graphic file (type jpg)
-<use G:/Diplom/bleutr.jpg>
-Package pdftex.def Info: G:/Diplom/bleutr.jpg  used on input line 726.
-(pdftex.def)             Requested size: 199.16928pt x 135.03447pt.
-<G:/Diplom/lbtr.jpg, id=186, 274.02374pt x 180.675pt>
-File: G:/Diplom/lbtr.jpg Graphic file (type jpg)
-<use G:/Diplom/lbtr.jpg>
-Package pdftex.def Info: G:/Diplom/lbtr.jpg  used on input line 730.
-(pdftex.def)             Requested size: 199.16928pt x 131.32372pt.
-<G:/Diplom/valtr.jpg, id=187, 254.45062pt x 180.675pt>
-File: G:/Diplom/valtr.jpg Graphic file (type jpg)
-<use G:/Diplom/valtr.jpg>
-Package pdftex.def Info: G:/Diplom/valtr.jpg  used on input line 734.
-(pdftex.def)             Requested size: 199.16928pt x 141.42767pt.
- [22] [23 <G:/Diplom/bleutr.jpg> <G:/Diplom/lbtr.jpg> <G:/Diplom/valtr.jpg>] [2
-4] [25
+ <./st.jpg> <./tran.jpg>] [16] [17] [18] [19]
+<bleutr.jpg, id=238, 266.49562pt x 180.675pt>
+File: bleutr.jpg Graphic file (type jpg)
+<use bleutr.jpg>
+Package pdftex.def Info: bleutr.jpg  used on input line 698.
+(pdftex.def)             Requested size: 227.62204pt x 154.32433pt.
+<lbtr.jpg, id=239, 274.02374pt x 180.675pt>
+File: lbtr.jpg Graphic file (type jpg)
+<use lbtr.jpg>
+Package pdftex.def Info: lbtr.jpg  used on input line 703.
+(pdftex.def)             Requested size: 227.62204pt x 150.08426pt.
+<valtr.jpg, id=240, 254.45062pt x 180.675pt>
+File: valtr.jpg Graphic file (type jpg)
+<use valtr.jpg>
+Package pdftex.def Info: valtr.jpg  used on input line 708.
+(pdftex.def)             Requested size: 227.62204pt x 161.6328pt.
+ [20 <./bleutr.jpg> <./lbtr.jpg>] [21 <./valtr.jpg>] [22
 
 ]
-Underfull \hbox (badness 1902) in paragraph at lines 764--766
+Underfull \hbox (badness 1902) in paragraph at lines 738--740
 []\T2A/cmr/m/n/14.4 Bernard Widrow. Pattern Recognition and Adaptive Control //
  IEEE
  []
 
-[26
+[23
 
-] (Novikov_Diplom_2022.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Novikov_Diplom_2022.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Novikov_Diplom_2022.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  98B6EC9E8DC6B2A7C4BDCCFB5E9F5CEE;4669.
+] [24] [25] (Novikov_Diplom_2022.aux)
+Package rerunfilecheck Info: File `Novikov_Diplom_2022.out' has not changed.
+(rerunfilecheck)             Checksum: F27D62BB2F62983B7EA3E5D18D4D1C86;4681.
  ) 
 Here is how much of TeX's memory you used:
- 14805 strings out of 478582
- 231573 string characters out of 2860753
- 522671 words of memory out of 3000000
- 32645 multiletter control sequences out of 15000+600000
- 478072 words of font info for 49 fonts, out of 8000000 for 9000
+ 14051 strings out of 478927
+ 213145 string characters out of 2850132
+ 524261 words of memory out of 3000000
+ 31554 multiletter control sequences out of 15000+600000
+ 412243 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,6n,77p,2112b,434s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\1369563\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm
-2074.pk> <C:\Users\1369563\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
-0\labx1728.pk> <C:\Users\1369563\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\labx2074.pk> <C:\Users\1369563\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/
-lh-t2a/dpi600\larm1440.pk> <C:\Users\1369563\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\1369563\AppData\Local\MiKTeX\fonts/p
-k/ljfour/lh/lh-t2a/dpi600\larm1200.pk><G:/Latexx/fonts/type1/public/amsfonts/cm
-/cmex10.pfb><G:/Latexx/fonts/type1/public/amsfonts/cm/cmmi10.pfb><G:/Latexx/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb><G:/Latexx/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><G:/Latexx/fonts/type1/public/amsfonts/cm/cmr12.pfb><G:/Latexx/font
-s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Novikov_Diplom_2022.pdf (26 pages, 1301820 bytes).
+ 72i,6n,80p,2104b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/Meijin/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/c
+m-super-t2a.enc}<C:/Users/Meijin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmex10.pfb><C:/Users/Meijin/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Meijin/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Meijin/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/User
+s/Meijin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Users/Meijin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/Meijin/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/cm-super/sfbx1440.pfb><C:/Users/Meijin/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/Meijin/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Users/Meijin/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/User
+s/Meijin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440
+.pfb><C:/Users/Meijin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-s
+uper/sfrm2074.pfb>
+Output written on Novikov_Diplom_2022.pdf (25 pages, 1310708 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
